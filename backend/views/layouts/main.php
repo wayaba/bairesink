@@ -121,7 +121,7 @@ AppAsset::register($this);
         <div class="pull-right hidden-xs">
           <b>Version</b> 0.1
         </div>
-        <strong>Copyright &copy; 2016-2016 <a href="http://domasolutions.com">Domasolutions</a>.</strong> Todos los derechos reservados.
+        <strong>Copyright &copy; 2018 - PJP.</strong> Todos los derechos reservados.
       </footer>
     </div><!-- ./wrapper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
