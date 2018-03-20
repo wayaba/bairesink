@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'New Look';
+$this->title = 'Baires Ink';
 ?>
 <div class="site-index">
 

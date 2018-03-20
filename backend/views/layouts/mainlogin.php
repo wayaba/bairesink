@@ -33,7 +33,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>NEW</b>LOOK</a>
+    <a href="../../index2.html"><b>BAIRES INK</b></a>
   </div>
   <!-- /.login-logo -->
   <?= $content ?>
