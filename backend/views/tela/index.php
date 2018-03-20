@@ -29,9 +29,24 @@ $this->params['breadcrumbs'][] = $this->title;
 		'summary' => false,
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'tableOptions'=>['class'=> 'table table-hover'],
         'columns' => 
             ['descripcion',
-            ['class' => 'yii\grid\ActionColumn', 'template' => '{update}'],
+                ['class' => 'yii\grid\ActionColumn', 'template' => '{update} {delete}',
+                    
+                    'buttons'=>
+                    ['update'=>function ($model, $key, $index) {
+                        return '<a href="/index.php?r=tela%2Fupdate&amp;id='.$key->id.'" data-toggle="tooltip"  data-placement="top" aria-label="Actualizar" data-pjax="0"><span class="glyphicon glyphicon-pencil"></span></a>';
+                    
+                        },
+                     'delete'=>function ($model, $key, $index) {
+                        return '<a href="/index.php?r=tela%2Fdelete&amp;id='.$key->id.'" data-toggle="tooltip"  data-placement="top" aria-label="Actualizar" data-pjax="0" data-method="post" data-confirm="¿Está seguro de eliminar este elemento?"><span class="glyphicon glyphicon-trash" ></span></a>';
+                        
+                        }
+                                        
+                    
+                    ]
+                    ],
         ],
     ]); ?>
 <?php Pjax::end(); ?>
