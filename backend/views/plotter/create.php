@@ -2,13 +2,13 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model common\models\Tela */
 
-$this->title = 'Actualizar Tela: ' . $model->descripcion;
-$this->params['breadcrumbs'][] = ['label' => 'Telas', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->descripcion];
-$this->params['breadcrumbs'][] = 'Actualizar';
+/* @var $this yii\web\View */
+/* @var $model common\models\Socio */
+
+$this->title = 'Crear Plotter';
+$this->params['breadcrumbs'][] = ['label' => 'Plotters', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
 	<div class="col-md-12">

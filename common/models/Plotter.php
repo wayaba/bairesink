@@ -5,19 +5,19 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "tela".
+ * This is the model class for table "plotter".
  *
  * @property integer $id
  * @property string $descripcion
  */
-class Tela extends \yii\db\ActiveRecord
+class Plotter extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'tela';
+        return 'plotter';
     }
 
     /**
@@ -44,10 +44,10 @@ class Tela extends \yii\db\ActiveRecord
 
     /**
      * @inheritdoc
-     * @return TelaQuery the active query used by this AR class.
+     * @return PlotterQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new TelaQuery(get_called_class());
+        return new PlotterQuery(get_called_class());
     }
 }

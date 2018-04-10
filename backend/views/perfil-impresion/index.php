@@ -10,7 +10,7 @@ use yii\helpers\Url;
 /* @var $searchModel common\models\SocioSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Telas';
+$this->title = 'Perfiles de impresion';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box">
@@ -20,11 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 	<div class="box-tools">
     <p>
-        <?= Html::a('Nueva Tela', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Nuevo Perfil impresion', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 	</div>
 </div>
-<?php Pjax::begin(['id'=>'pjax-telas']); ?>
+<?php Pjax::begin(['id'=>'pjax-perfilimpresion']); ?>
 
 <div class="box-body table-responsive no-padding" >    
 <?= GridView::widget([
@@ -40,11 +40,11 @@ $this->params['breadcrumbs'][] = $this->title;
             		'buttons'=>
             		[
             		'delete'=>function ($model, $key, $index) {
-            		return '<a href="/index.php?r=tela%2Fdelete&amp;id='.$key->id.'" data-toggle="tooltip"  data-placement="top" aria-label="Actualizar" data-pjax="0" data-method="post" data-confirm="¿Está seguro de eliminar este elemento?"><span class="glyphicon glyphicon-trash" ></span></a>';
+            		return '<a href="/index.php?r=perfil-impresion%2Fdelete&amp;id='.$key->id.'" data-toggle="tooltip"  data-placement="top" aria-label="Actualizar" data-pjax="0" data-method="post" data-confirm="¿Está seguro de eliminar este elemento?"><span class="glyphicon glyphicon-trash" ></span></a>';
             		
             		},
             		'update'=>function ($model, $key, $index) {
-            		return '<a href="/index.php?r=tela%2Fupdate&amp;id='.$key->id.'" data-toggle="tooltip"  data-placement="top" aria-label="Actualizar" data-pjax="0"><span class="glyphicon glyphicon-pencil"></span></a>';
+            		return '<a href="/index.php?r=perfil-impresion%2Fupdate&amp;id='.$key->id.'" data-toggle="tooltip"  data-placement="top" aria-label="Actualizar" data-pjax="0"><span class="glyphicon glyphicon-pencil"></span></a>';
             		
             		}
             		

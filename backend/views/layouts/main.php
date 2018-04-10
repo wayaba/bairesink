@@ -83,12 +83,12 @@ AppAsset::register($this);
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="<?=Url::to( ['socio/index'] ) ?>"><i class="fa fa-circle-o"></i> Socios</a></li>
                 <?php if (Yii::$app->user->identity->admin) {?>
-                <li class="active"><a href="<?=Url::to( ['socio/stats'] ) ?>"><i class="fa fa-circle-o"></i> Estadisticas</a></li>
-                <li class="active"><a href="<?=Url::to( ['plan/index'] ) ?>"><i class="fa fa-circle-o"></i> Planes</a></li>
                 <li class="active"><a href="<?=Url::to( ['tela/index'] ) ?>"><i class="fa fa-circle-o"></i> Telas</a></li>
-                
+                <li class="active"><a href="<?=Url::to( ['plotter/index'] ) ?>"><i class="fa fa-circle-o"></i> Plotters</a></li>
+                <li class="active"><a href="<?=Url::to( ['empleado/index'] ) ?>"><i class="fa fa-circle-o"></i> Empleados</a></li>
+                <li class="active"><a href="<?=Url::to( ['cliente/index'] ) ?>"><i class="fa fa-circle-o"></i> Clientes</a></li>
+                <li class="active"><a href="<?=Url::to( ['perfil-impresion/index'] ) ?>"><i class="fa fa-circle-o"></i> Perfiles Impresion</a></li>
                 <?php }?>
               </ul>
             </li>

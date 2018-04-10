@@ -54,7 +54,7 @@ class Empleado extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIdPersona()
+    public function getPersona()
     {
         return $this->hasOne(Persona::className(), ['id' => 'id_persona']);
     }

@@ -3,10 +3,10 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Tela */
+/* @var $model common\models\Socio */
 
-$this->title = 'Actualizar Tela: ' . $model->descripcion;
-$this->params['breadcrumbs'][] = ['label' => 'Telas', 'url' => ['index']];
+$this->title = 'Actualizar Plotter: ' . $model->descripcion;
+$this->params['breadcrumbs'][] = ['label' => 'Plotters', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->descripcion];
 $this->params['breadcrumbs'][] = 'Actualizar';
 ?>

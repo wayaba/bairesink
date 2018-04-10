@@ -3,11 +3,11 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Tela */
+/* @var $model common\models\Cliente */
 
-$this->title = 'Actualizar Tela: ' . $model->descripcion;
-$this->params['breadcrumbs'][] = ['label' => 'Telas', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->descripcion];
+$this->title = 'Actualizar Empleado: ' . $modelPersona->nombre .' '.$modelPersona->apellido;
+$this->params['breadcrumbs'][] = ['label' => 'Empleados', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $modelPersona->nombre];
 $this->params['breadcrumbs'][] = 'Actualizar';
 ?>
 <div class="row">
@@ -18,6 +18,7 @@ $this->params['breadcrumbs'][] = 'Actualizar';
 			</div>
 			    <?= $this->render('_form', [
 			        'model' => $model,
+			        'modelPersona'=>$modelPersona,
 			    ]) ?>
 		</div>
 	</div>
